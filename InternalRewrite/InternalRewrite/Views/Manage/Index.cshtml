@@ -1,0 +1,21 @@
+﻿@model InternalRewrite.Models.IndexViewModel
+@{
+    ViewBag.Title = "Account Settings";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+<p class="text-success">@ViewBag.StatusMessage</p>
+<div>
+    <h4></h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Password:</dt>
+        <dd>
+                @Html.ActionLink("Change your password", "ChangePassword")
+            
+        </dd>
+       
+        
+    </dl>
+</div>

@@ -1,0 +1,68 @@
+﻿@model InternalRewrite.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<hr />
+<hr />
+
+<div class="panel panel-warning">
+    <div class="panel-heading">Create New Account</div>
+    <div class="panel-body">
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary("", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Phone, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", id = "phone_us", mask = "(999) 999-9999" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.FirstName, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.LastName, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" class="btn btn-info" value="Register" />
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+
+
+
+
+<div style="color:red;">Your Password will be generated and sent to your email. You can change it once you are logged in by clicking on your username.</div>
+
+<script type="text/javascript">
+     // jQuery(function($){
+      // $('#phone_us').mask('(000) 000-0000');
+      //});
+
+</script>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/jquerymask")
+}

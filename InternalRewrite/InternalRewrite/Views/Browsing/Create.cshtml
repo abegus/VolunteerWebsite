@@ -1,0 +1,170 @@
+﻿@model InternalRewrite.ViewModels.BrowsingViewModel
+
+@{
+    ViewBag.Title = "Browse Volunteer Opportunities";
+}
+@using InternalRewrite.Models;
+@using System;
+@using Microsoft.AspNet.Identity;
+
+<h2>Browse Volunteer Opportunities</h2>
+
+<p style="display:none;">
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+
+@using (Html.BeginForm())
+{
+
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <div class="panel panel-warning">
+            <div class="panel-heading">Search Parameters</div>
+            <div class="panel-body">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(model => model.BrowseObject.EventName, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.BrowseObject.EventName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.BrowseObject.EventName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+
+                    @Html.LabelFor(model => model.BrowseObject.StartDateTime, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.BrowseObject.StartDateTime, new { htmlAttributes = new { @class = "form-control" } })
+                        <!-- Just doing date, no time filter -->
+                        @Html.ValidationMessageFor(model => model.BrowseObject.StartDateTime, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.BrowseObject.Address, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.BrowseObject.Address, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.BrowseObject.Address, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.BrowseObject.City, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.BrowseObject.City, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.BrowseObject.City, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.BrowseObject.State, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.BrowseObject.State, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.BrowseObject.State, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.BrowseObject.Position, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.BrowseObject.Position, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.BrowseObject.Position, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Filter" class="btn btn-info" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+       
+    </div>
+}
+
+
+@if (Model.Volunteers != null)
+{
+    <h4>Volunteers for Selected Event</h4>
+    <div style="color:red;">
+        If you have a confliction with an event you are currently signed up for, you will not be able to sign up.
+    </div>
+    <table class="table">
+        <tr>
+            <th>
+                Event Name
+            </th>
+            <th>
+                Position
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                StartDate/Time
+            </th>
+            <th>
+                EndDate/Time
+            </th>
+            <th>
+                Address
+            </th>
+            <th>
+                City
+            </th>
+            <th>
+                State
+            </th>
+            <th>
+                Creator
+            </th>
+            <th>
+                Sign Up
+            </th>
+        </tr>
+        
+        @foreach (var item in Model.Volunteers.OrderBy(i => i.Event.StartDateTime))
+        {
+            if (item.UserID == null)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Event.EventName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Position)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Event.StartDateTime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Event.EndDateTime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Event.Address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Event.City)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Event.State)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Event.User.Email)
+                    </td>
+                    <td>
+                        <input type="button" value="+" class="btn btn-info" id="@item.Id" onclick="location.href='@Url.Action("Details", "Browsing", new { positionID = item.Id })'" />
+                    </td>
+                </tr>
+            }
+        }
+
+    </table>
+}

@@ -1,0 +1,25 @@
+﻿@model InternalRewrite.Models.VolunteerPosition
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Event</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Position)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Position)
+        </dd>
+    </dl>
+    Congratulations on signing up for the position!
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

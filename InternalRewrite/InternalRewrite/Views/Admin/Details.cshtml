@@ -1,0 +1,44 @@
+﻿@model InternalRewrite.ViewModels.AdminViewModel
+
+@{
+    ViewBag.Title = "Report";
+}
+
+<h2>Volunteering Easy Reports</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Number Of Events
+        </th>
+        <th>
+            Number Of Volunter Positions
+        </th>
+        <th>
+            Number Of Filled Positions
+        </th>
+        <th>
+            Number Of Notificaitons
+        </th>
+    </tr>
+
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => Model.report.NumEvents)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.report.NumVolunteerRoles)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.report.NumFilledRoles)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.report.NumNotifications)
+        </td>
+    </tr>
+    
+
+</table>
+<p>
+    @Html.ActionLink("Back to Admin Page", "Index")
+</p>

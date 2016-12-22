@@ -1,0 +1,151 @@
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\roslyn\csc.exe
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\roslyn\System.Collections.Immutable.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\roslyn\vbc.exe
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\roslyn\VBCSCompiler.exe
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\roslyn\VBCSCompiler.exe.config
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\InternalRewrite.dll.config
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\InternalRewrite.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\InternalRewrite.pdb
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Antlr3.Runtime.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\EntityFramework.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\EntityFramework.SqlServer.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.Google.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.Web.Infrastructure.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Newtonsoft.Json.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Owin.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\System.Web.Helpers.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\System.Web.Mvc.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\System.Web.Optimization.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\System.Web.Razor.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\System.Web.WebPages.Deployment.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\System.Web.WebPages.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\System.Web.WebPages.Razor.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\WebGrease.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\System.Web.Helpers.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\System.Web.Mvc.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\System.Web.Optimization.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\System.Web.Razor.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\System.Web.WebPages.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\System.Web.WebPages.Deployment.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\System.Web.WebPages.Razor.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Antlr3.Runtime.pdb
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Newtonsoft.Json.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\EntityFramework.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\EntityFramework.SqlServer.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.Google.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\obj\Debug\InternalRewrite.dll
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\obj\Debug\InternalRewrite.pdb
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\obj\Debug\InternalRewrite.Migrations.addedFieldInTable.resources
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\obj\Debug\InternalRewrite.csproj.GenerateResource.Cache
+c:\users\abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\obj\Debug\InternalRewrite.Migrations.ChangedTableName.resources
+C:\Users\Abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\obj\Debug\InternalRewrite.Migrations.addingListOfVolunteers.resources
+C:\Users\Abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\obj\Debug\InternalRewrite.Migrations.UpdateUser.resources
+C:\Users\Abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\obj\Debug\InternalRewrite.Migrations.test.resources
+C:\Users\Abe\documents\visual studio 2015\Projects\InternalRewrite\InternalRewrite\obj\Debug\InternalRewrite.Migrations.test1.resources
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\roslyn\csc.exe
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\roslyn\vbc.exe
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\roslyn\VBCSCompiler.exe
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\InternalRewrite.dll.config
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\InternalRewrite.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\InternalRewrite.pdb
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Antlr3.Runtime.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\EntityFramework.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\EntityFramework.SqlServer.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Newtonsoft.Json.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Owin.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\System.Web.Helpers.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\System.Web.Mvc.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\System.Web.Optimization.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\System.Web.Razor.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\System.Web.WebPages.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\System.Web.WebPages.Razor.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\WebGrease.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\System.Web.Helpers.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\System.Web.Mvc.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\System.Web.Optimization.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\System.Web.Razor.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\System.Web.WebPages.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\System.Web.WebPages.Razor.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Antlr3.Runtime.pdb
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Newtonsoft.Json.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\EntityFramework.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\EntityFramework.SqlServer.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\obj\Debug\InternalRewrite.csprojResolveAssemblyReference.cache
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\obj\Debug\InternalRewrite.Migrations.addedFieldInTable.resources
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\obj\Debug\InternalRewrite.Migrations.ChangedTableName.resources
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\obj\Debug\InternalRewrite.Migrations.addingListOfVolunteers.resources
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\obj\Debug\InternalRewrite.Migrations.UpdateUser.resources
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\obj\Debug\InternalRewrite.Migrations.test.resources
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\obj\Debug\InternalRewrite.Migrations.test1.resources
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\obj\Debug\InternalRewrite.csproj.GenerateResource.Cache
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\obj\Debug\InternalRewrite.dll
+C:\Users\Abe\Documents\VolunteerWebsite\InternalRewrite\InternalRewrite\obj\Debug\InternalRewrite.pdb

@@ -1,0 +1,68 @@
+﻿@model InternalRewrite.ViewModels.MyVolunteeringViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<hr /><hr />
+
+<div class="panel panel-warning">
+    <div class="panel-heading">My Signed Up Positions</div>
+    <div class="panel-body">
+        <table class="table">
+            <tr>
+                <th>
+                    Position
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    EventName
+                </th>
+                <th>
+                    StartTime
+                </th>
+                <th>
+                    EndTime
+                </th>
+                <th>
+                    Actions
+                </th>
+            </tr>
+            @foreach (var item in Model.Volunteers)
+            {
+
+                var involvedEvents = from eve in Model.Events where eve.Id == item.EventID select eve;
+                foreach (var evnt in involvedEvents)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Position)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Description)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => evnt.EventName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => evnt.StartDateTime)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => evnt.EndDateTime)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Details", "Details", new { positionId = item.Id, eventId = evnt.Id }) |
+                            @Html.ActionLink("Withdraw", "Delete", new { positionId = item.Id })
+                        </td>
+                    </tr>
+                }
+            }
+
+        </table>
+    </div>
+</div>
+
+
+
+

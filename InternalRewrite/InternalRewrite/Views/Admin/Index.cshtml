@@ -1,0 +1,83 @@
+﻿@model InternalRewrite.ViewModels.AdminViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<h2>Generate Reports</h2>
+<input type="button" class="btn btn-info" value="Generate Report" onclick="@("window.location.href='" + @Url.Action("Details", "Admin") + "'");" />
+<br>
+<br>
+
+<div class="panel panel-warning">
+    <div class="panel-heading">Create Admin User</div>
+    <div class="panel-body">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <hr />
+            <div style="color:red;">
+                @Model.creationMessage
+            </div>
+            @Html.ValidationSummary("", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(m => m.NewAdminAccount.Email, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.NewAdminAccount.Email, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Promote" class="btn btn-info" />
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+<br>
+
+<div class="panel panel-warning">
+    <div class="panel-heading">Unlock Accounts</div>
+    <div class="panel-body">
+        <table class="table">
+            <tr>
+                <th>
+                    Username
+                </th>
+                <th>
+                    Lockout Date
+                </th>
+                <th>
+                    Unlock
+                </th>
+            </tr>
+
+            @foreach (var item in Model.UnlockableUsers)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LockoutEndDateUtc)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Unlock", "Delete", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/jquerymask")
+}

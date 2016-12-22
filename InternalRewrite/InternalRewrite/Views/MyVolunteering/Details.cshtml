@@ -1,0 +1,64 @@
+﻿@model InternalRewrite.ViewModels.MyVolunteeringViewModel
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>My Signed Up Positions</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            EventName
+        </th>
+        <th>
+            StartDateTime
+        </th>
+        <th>
+            EndDateTime
+        </th>
+        <th>
+            Address
+        </th>
+        <th>
+            City
+        </th>
+        <th>
+            State
+        </th>
+        <th>
+            Event Creator
+        </th>
+    </tr>
+    @foreach (var eve in Model.Events)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => eve.EventName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => eve.StartDateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => eve.EndDateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => eve.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => eve.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => eve.State)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => eve.User.Email)
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

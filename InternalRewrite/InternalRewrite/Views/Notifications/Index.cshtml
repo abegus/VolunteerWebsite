@@ -1,0 +1,109 @@
+﻿@model InternalRewrite.ViewModels.FullNotificationViewModel
+
+@{
+    ViewBag.Title = "Notifications";
+}
+
+
+
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <hr />
+    <hr />
+    <div class="form-horizontal">
+
+        <div class="panel panel-warning">
+            <div class="panel-heading">Send Notification</div>
+            <div class="panel-body">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group" style="display:none">
+                    @Html.LabelFor(model => model.sendingNotification.Id, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.sendingNotification.Id, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.sendingNotification.Id, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group" style="display:none">
+                    @Html.LabelFor(model => model.sendingNotification.SenderID, "SenderID", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.sendingNotification.SenderID, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.sendingNotification.SenderID, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+                <!--This was model.RecieverID, changing to RecieverUsername so they can just type that and get the id behind the scenes-->
+                <div class="form-group">
+                    @Html.LabelFor(model => model.sendingNotification.RecieverUsername, "Username", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.sendingNotification.RecieverUsername, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.sendingNotification.RecieverUsername, "", new { @class = "text-danger" })
+                        @ViewBag.error
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.sendingNotification.Message, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.sendingNotification.Message, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.sendingNotification.Message, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Send" class="btn btn-info" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+}
+
+
+
+
+<h2>Recieved Notifications</h2>
+<table class="table">
+    <tr>
+        <th>
+            From
+        </th>
+        <th>
+            Message
+        </th>
+        <th>
+            Actions
+        </th>
+    </tr>
+@if (Model.RecievedNotifications != null)
+{
+    foreach (var item in Model.RecievedNotifications)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SenderUsername)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Message)
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+}
+
+</table>
+
+
+
+

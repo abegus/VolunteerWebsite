@@ -1,0 +1,136 @@
+﻿@model InternalRewrite.ViewModels.EventsAndViews
+
+@{
+    ViewBag.Title = "My Events";
+}
+
+<h2>My Events</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<div class="panel panel-warning">
+    <div class="panel-heading">MyEvents</div>
+    <div class="panel-body">
+        <table class="table">
+            <tr>
+                <th>
+                    EventName
+                </th>
+                <th>
+                    StartDateTime
+                </th>
+                <th>
+                    EndDateTime
+                </th>
+                <th>
+                    Address
+                </th>
+                <th>
+                    City
+                </th>
+                <th>
+                    State
+                </th>
+                <th>
+                    Press Select to see Volunteers
+                </th>
+            </tr>
+            @foreach (var item in Model.Events.OrderBy(i => i.StartDateTime))
+            {
+                string selectedRow = "";
+                if (item.Id == ViewBag.EventID)
+                {
+                    selectedRow = "success";
+                }
+                <tr class="@selectedRow">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EventName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StartDateTime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EndDateTime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.City)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.State)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Select", "Index", new { id = item.Id }) |
+                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+            </table>
+        </div>
+    </div>
+
+
+
+
+@if (Model.Volunteers != null)
+{
+    <h4>Volunteers for Selected Event</h4>
+    <table class="table">
+        <tr>
+            <th>
+                Position
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Filled By
+            </th>
+            <th>
+                Filled Name
+            </th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model.Volunteers)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Position)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @if (item.UserID != null)
+                    {
+                        @Html.DisplayFor(modelItem => item.User.Email)
+                    }
+                </td>
+                <td>
+                    @if (item.UserID != null)
+                    {
+                        @Html.DisplayFor(modelItem => item.User.FirstName) <text> </text>
+                        @Html.DisplayFor(modelItem => item.User.LastName)
+                    }
+                </td>
+                <td>
+                    <a href='@Url.Action("Edit", "VolunteerPositions", new { id = item.Id })'>Edit</a> |
+                    <a href='@Url.Action("Details", "VolunteerPositions", new { id = item.Id })'>Details</a> |
+                    <a href='@Url.Action("Delete", "VolunteerPositions", new { id = item.Id })'>Delete</a>
+                </td>
+            </tr>
+        }
+
+    </table>
+}
+@if (ViewBag.EventID != null)
+{
+    <input type="button" class="btn btn-info"  value="Add Volunteer Position" onclick="location.href='@Url.Action("Create", "VolunteerPositions", new { EventID = ViewBag.EventID })'" />
+    <input type="button" class="btn btn-info"  value="View Volunteers" onclick="location.href='@Url.Action("Index", "VolunteerPositions", new { EventID = ViewBag.EventID })'" />
+}

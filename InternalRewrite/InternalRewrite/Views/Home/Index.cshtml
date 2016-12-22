@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@using Microsoft.AspNet.Identity
+
+
+<div class="jumbotron">
+    <h1>Volunteering Made Easy!</h1>
+    <p class="lead">Created by Abe Gustafson for CS 741</p>
+</div>
+
+<!--<header class="intro-header" style="background-image: url('../../Content/background.jpg'); color:black;background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;  ">
+    <img src="../../Content/background.jpg" style="visibility: hidden;" />
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>Volunteering Easy</h1>
+                    <hr class="small" />
+                    <span class="subheading">Created by Abe Gustafson for CS 741</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>-->
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="panel panel-warning">
+            <div class="panel-heading">Browse Events</div>
+            <div class="panel-body"><div>Volunteering Easy lets you Browse for a variety of different events that fit what you are looking for. Use the built in search filters to find the perfect event for you.</div>
+                <br /><p><a class="btn btn-info" href="/Browsing/Index">Start Browsing &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-warning">
+            <div class="panel-heading">Create Events</div>
+            <div class="panel-body"><div>Create and customize your own Volunteering Event for your personal, or professional use. Add a variety of positions that other real users will see and sign up for.</div>
+                <br /><p><a class="btn btn-info" href="/EventsAndViews/Index">Create Now &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-warning">
+            <div class="panel-heading">Notification Center</div>
+            <div class="panel-body"><div>Communicate with other users on the website with the click of a button. Also get system messages about events that pertain to you. </div>
+                <br /><br /><p><a class="btn btn-info" href="/Notifications/Index">Notifications &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
